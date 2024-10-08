@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white : hsla(0, 0%, 100%, 0.75);
+--Very--light-gray : hsl(0, 0%, 95%);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.principal-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 800px;
+}
+
+
+.sedans{
+    background-color: var(--Bright-orange);
+    padding: 45px;
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+    padding: 45px;
+    height: 295px;
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    padding: 45px;
+    height: 295px;
+}
+
+imagem{
+    margin-bottom: 20px;
+}
+
+.titulo{
+    color: var(--Very--light-gray);
+    font-family: "Big Shoulders Display" , sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.descricao{
+    color: var(--Transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin: 0 0 20px 0;
+    line-height: 25px;
+    
+}
+
+.bnt{
+    border: none;
+    height: 10px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: var(--Very--light-gray);
+    font-family: "Lexend Deca" , sans-serif;
+    margin: 50px 0 0;
+    cursor: pointer;
+}
+
+.sedans .btn:hover {
+    color: var(--Bright-orange);
+    padding: 1px solid;
+    color: var(--Very--light-gray);
+}
+
+.suvs .btn {
+     color: var(--Dark-cyan);
+}
+
+.suvs .bnt:hover{
+    background-color: var(--Dark-cyan);
+    outline: 1px solid;
+    color: var(--Very--light-gray);
+}
+
+.luxury .bnt{
+    color: var(--Very-dark-cyan);
+}
+
+.luxury .btn:hover {
+    color: var(--Very-dark-cyan);
+    outline: 1px solid;
+    color: var(--Very--light-gray);
+}
+
+
